@@ -75,4 +75,9 @@ You can earn extra points if you add one or more of the following:
 - A **random bot name** that changes with every message or specific to a transformation (e.g., “HelperBot” or “TextBot”).
 - **Theme switcher** (e.g., dark mode/light mode).
 
-Good luck, and have fun building your chat interface!
+
+#### **Team Information:**
+Instructor : Amber Jain & Jeet Mukharji
+Team Name : SuDoCoder
+Team Member : Sahil Kumar & Nagmani Kumar
+
