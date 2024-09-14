@@ -78,6 +78,8 @@ You can earn extra points if you add one or more of the following:
 
 #### **Team Information:**
 Instructor : Amber Jain & Jeet Mukharji
+
 Team Name : SuDoCoder
+
 Team Member : Sahil Kumar & Nagmani Kumar
 
