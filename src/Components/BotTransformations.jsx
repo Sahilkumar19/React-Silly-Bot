@@ -1,4 +1,4 @@
-function Bot(message) {
+function BotTransformations(message) {
   if (!message.trim()) {
     return "Please enter a message.";
   }
@@ -79,4 +79,4 @@ function getRandomResponse() {
   return responses[Math.floor(Math.random() * responses.length)];
 }
 
-export default Bot;
+export default BotTransformations;

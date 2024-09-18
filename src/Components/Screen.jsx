@@ -12,7 +12,6 @@ function ChatWindow({ messages }) {
     setIsDarkMode(darkMode);
   };
 
-  // Scroll to the bottom whenever messages change
   useEffect(() => {
     if (messagesEndRef.current) {
       messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });

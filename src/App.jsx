@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ChatWindow from '../src/components/ChatWindow';
-import MessageInput from '../src/components/MessageInput';
-import Bot from '../src/components/Bot';
+import Screen from '../src/components/Screen';
+import UserInput from '../src/components/UserInput';
+import BotTransformations from '../src/components/BotTransformations';
 import './styles.css';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       { text: message, sender: 'user', timestamp }
     ]);
     setTimeout(() => {
-      const botResponse = Bot(message);
+      const botResponse = BotTransformations(message);
       setMessages((prevMessages) => [
         ...prevMessages,
         { text: botResponse, sender: 'bot', timestamp: now.toLocaleTimeString() }
@@ -31,8 +31,8 @@ function App() {
   return (
     <div className="app">
         <div className="chat-container">
-          <ChatWindow messages={messages} />
-          <MessageInput onSend={addMessage} />
+          <Screen messages={messages} />
+          <UserInput onSend={addMessage} />
         </div>
     </div>
     

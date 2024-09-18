@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../styles.css'; 
-import botImage from '/src/assets/rk.jpg';
+import '../styles.css';
+import botImage from '/src/assets/meet.jpg';
 
 
 function Navbar({ onThemeChange }) {
@@ -21,4 +21,4 @@ function Navbar({ onThemeChange }) {
   );
 }
 
-export default Navbar;
+export default Header;

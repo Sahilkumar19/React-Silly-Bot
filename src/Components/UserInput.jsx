@@ -2,12 +2,12 @@ import React, { useState, useRef } from 'react';
 import '../styles.css';
 import { FaPaperPlane, FaTimesCircle } from 'react-icons/fa';
 
-function MessageInput({ onSend }) {
+function UserInput({ onSend }) {
   const [input, setInput] = useState('');
-  const sendButtonRef = useRef(null); // Reference to the send button
+  const sendButtonRef = useRef(null); 
 
   const handleSubmit = (e) => {
-    e?.preventDefault();  // Make e optional in case of automatic sending
+    e?.preventDefault(); 
     if (input.trim()) {
       onSend(input);
       setInput('');
@@ -44,4 +44,4 @@ function MessageInput({ onSend }) {
   );
 }
 
-export default MessageInput;
+export default UserInput;
