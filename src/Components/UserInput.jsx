@@ -1,13 +1,12 @@
 import React, { useState, useRef } from 'react';
 import '../styles.css';
-import { FaPaperPlane, FaTimesCircle } from 'react-icons/fa';
 
 function UserInput({ onSend }) {
   const [input, setInput] = useState('');
-  const sendButtonRef = useRef(null); 
+  const sendButtonRef = useRef(null);
 
   const handleSubmit = (e) => {
-    e?.preventDefault(); 
+    e.preventDefault();
     if (input.trim()) {
       onSend(input);
       setInput('');
@@ -20,24 +19,31 @@ function UserInput({ onSend }) {
 
   return (
     <form className="message-input" onSubmit={handleSubmit}>
-      <div className="input-container">
+      <div className="input-container d-flex">
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Type your message..."
+          className="form-control"
         />
+
         {input && (
-          <button type="button" className="clear-button" onClick={handleClearClick}>
-            <FaTimesCircle />
+          <button 
+            type="button" 
+            className="btn btn-outline-secondary ml-2"
+            onClick={handleClearClick}
+          >
+            Clear
           </button>
         )}
+
         <button
           type="submit"
-          className="send-button"
-          ref={sendButtonRef} // Set reference for the send button
+          className="btn btn-primary ml-4"
+          ref={sendButtonRef}
         >
-          <FaPaperPlane />
+          Send
         </button>
       </div>
     </form>

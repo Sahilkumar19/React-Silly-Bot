@@ -1,23 +1,22 @@
 .app {
   display: flex;
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh;
 }
 
 .sidebar {
-  width: 20%; /* 20% for the sidebar */
-  background-color: #f4f4f4; /* Light background for the sidebar */
+  width: 20%;
+  background-color: #f4f4f4;
   padding: 1rem;
 }
 
 .chat-container {
-  width: 80%; /* 80% for the chat */
+  width: 80%;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff; /* Background for chat window */
 }
 
 .chat-window {
-  flex-grow: 1; /* Chat window takes the remaining height */
+  flex-grow: 1;
   overflow-y: auto;
   padding: 1rem;
 }
@@ -52,7 +51,7 @@ input[type="text"] {
 }
 
 .send-button {
-  background: #0088cc; /* Telegram blue */
+  background: #0088cc;
   border: none;
   padding: 0.5rem 1rem;
   color: #fff;
@@ -64,32 +63,28 @@ input[type="text"] {
   font-size: 1.2rem;
 }
 
-.send-button svg {
-  color: white; /* White color for the send icon */
-}
-
 .navbar {
   background-color: #f4f4f4;
   padding: 1rem;
   display: flex;
-  align-items: center; /* Vertically aligns items */
-  justify-content: space-between; /* Ensures there's space between elements if needed */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .chatbot-header {
   display: flex;
-  align-items: center; /* Align image and text on the same line */
+  align-items: center;
 }
 
 .logos {
-  width: 50px; /* Adjust the width of the bot image */
-  height: 50px; /* Adjust the height of the bot image */
-  margin-right: 10px; /* Add some space between the image and text */
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
 
 h1 {
-  font-size: 1.5rem; /* Adjust font size if needed */
-  margin: 0; /* Remove any default margin */
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 .messages-container {
@@ -106,16 +101,16 @@ h1 {
 }
 
 .message.user {
-  align-self: flex-end; /* Aligns user messages to the right */
-  background-color: yellowgreen; /* User's message background color */
+  align-self: flex-end;
+  background-color: yellowgreen;
   border-radius: 15px 15px 0 15px;
   padding: 10px;
   color: white;
 }
 
 .message.bot {
-  align-self: flex-start; /* Aligns bot messages to the left */
-  background-color: #f0f0f0; /* Bot's message background color */
+  align-self: flex-start;
+  background-color: #f0f0f0;
   border-radius: 15px 15px 15px 0;
   padding: 10px;
   color: black;
@@ -133,13 +128,11 @@ h1 {
 }
 
 .message.user .timestamp {
-  text-align: left; /* Align timestamp to the left for user messages */
+  text-align: left;
   color: #fff;
 }
 
 .message.bot .timestamp {
-  text-align: right; /* Align timestamp to the right for bot messages */
+  text-align: right;
   color: #333;
 }
-
-

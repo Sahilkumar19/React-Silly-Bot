@@ -1,14 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../styles.css';
 import Header from './Header';
 
 function Screen({ messages }) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
   const messagesEndRef = useRef(null);
-
-  const handleThemeChange = (darkMode) => {
-    setIsDarkMode(darkMode);
-  };
 
   useEffect(() => {
     if (messagesEndRef.current) {
@@ -17,8 +12,8 @@ function Screen({ messages }) {
   }, [messages]);
 
   return (
-    <div className={`chat-window ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
-      <Header onThemeChange={handleThemeChange} />
+    <div className="chat-window">
+      <Header />
       <div className="messages-container">
         {messages.map((msg, index) => (
           <div key={index} className={`message ${msg.sender}`}>
