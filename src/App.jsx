@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Screen from './Components/Screen';
 import UserInput from './Components/UserInput';
 import BotTransformations from './Components/BotTransformations';
-import './styles.css';
+import './Components/CustomStyles.css';
 
 function App() {
   const [setIsChatVisible] = useState(false);

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import '../styles.css';
+import './CustomStyles.css';
 
 function UserInput({ onSend }) {
   const [input, setInput] = useState('');

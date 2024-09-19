@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles.css';
+import './CustomStyles.css';
 
 function Sidebar({ isDarkMode, onThemeToggle, chatHistory }) {
   return (

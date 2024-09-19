@@ -1,19 +1,12 @@
-import React, { useState } from 'react';
-import '../styles.css';
-import botImage from '../assets/meet.jpg';
+import React from 'react';
+import './CustomStyles.css';
+import chatImage from '../assets/meet.jpg';
 
-function Header({ onThemeChange }) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const handleThemeToggle = () => {
-    setIsDarkMode(!isDarkMode);
-    onThemeChange(!isDarkMode);
-  };
-
+function Header() {
   return (
-    <div className={`navbar ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+    <div className="navbar">
       <div className="chatbot-header">
-        <img src={botImage} alt="MiniMeet" className="logos" />
+        <img src={chatImage} alt="MiniMeet" className="logos" />
         <h1>MiniMeet</h1>
       </div>
     </div>

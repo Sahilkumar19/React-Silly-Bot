@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import '../styles.css';
+import './CustomStyles.css';
 import Header from './Header';
 
 function Screen({ messages }) {
