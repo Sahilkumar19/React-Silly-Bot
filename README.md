@@ -1,4 +1,4 @@
-# React-Silly-Bot - MinMeet
+# React-Silly-Bot - MiniMeet
 
 ## Web Development Homework 1: React Chat Interface with a Simple Bot
 
@@ -51,7 +51,7 @@ To run this project locally, follow these steps:
    ```
 2. **Navigate to the project directory:**
    ```bash
-   cd react-silly-bot
+   cd React-Silly-Bot
    ```
 3. **Install dependencies:**
    ```bash
