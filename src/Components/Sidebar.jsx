@@ -17,20 +17,23 @@ function Sidebar({ isDarkMode, onThemeToggle, chatHistory }) {
         </label>
       </div>
 
+
       {/* Chat history section */}
       <div className="sidebar-section">
         <h3>Chat History</h3>
-        <ul className="chat-history">
-          {chatHistory.length === 0 ? (
-            <li>No chat history</li>
-          ) : (
-            chatHistory.map((msg, index) => (
-              <li key={index} className={`history-item ${msg.sender}`}>
-                {msg.sender}: {msg.text}
-              </li>
-            ))
-          )}
-        </ul>
+        <div className="chat-history-container">
+          <ul className="chat-history">
+            {chatHistory.length === 0 ? (
+              <li>No chat history</li>
+            ) : (
+              chatHistory.map((msg, index) => (
+                <li key={index} className={`history-item ${msg.sender}`}>
+                  {msg.sender}: {msg.text}
+                </li>
+              ))
+            )}
+          </ul>
+        </div>
       </div>
     </div>
   );
