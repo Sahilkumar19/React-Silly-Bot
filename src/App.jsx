@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Screen from '../src/components/Screen';
-import UserInput from '../src/components/UserInput';
-import BotTransformations from '../src/components/BotTransformations';
+import Screen from './Components/Screen';
+import UserInput from './Components/UserInput';
+import BotTransformations from './Components/BotTransformations';
 import './styles.css';
 
 function App() {

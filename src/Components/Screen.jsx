@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles.css';
-import Navbar from './Navbar';
-import userImage from '../assets/profile.jpeg'; 
-import botImage from '../assets/rk.jpg';
+import Header from './Header';
+import botImage from '../assets/meet.jpg';
 
-function ChatWindow({ messages }) {
+function Screen({ messages }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const messagesEndRef = useRef(null);
 
@@ -61,4 +60,4 @@ function ChatWindow({ messages }) {
   );
 }
 
-export default ChatWindow;
+export default Screen;

@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import '../styles.css';
 import botImage from '/src/assets/meet.jpg';
 
-
-function Navbar({ onThemeChange }) {
+function Header({ onThemeChange }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleThemeToggle = () => {
