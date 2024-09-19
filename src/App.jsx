@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import Screen from './Components/Screen';
 import UserInput from './Components/UserInput';
+import Sidebar from './Components/Sidebar';
 import BotTransformations from './Components/BotTransformations';
 import './Components/CustomStyles.css';
 
 function App() {
-  const [setIsChatVisible] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const [messages, setMessages] = useState([]);
 
-  const startChat = () => {
-    setIsChatVisible(true);
+  const handleThemeToggle = () => {
+    setIsDarkMode((prevMode) => !prevMode);
   };
 
   const addMessage = (message) => {
@@ -29,11 +30,12 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <div className="sidebar">
-        <h2>Sidebar</h2>
-        <p>Content for sidebar...</p>
-      </div>
+    <div className={`app ${isDarkMode ? 'dark-mode' : ''}`}>
+      <Sidebar 
+        isDarkMode={isDarkMode}
+        onThemeToggle={handleThemeToggle}
+        chatHistory={messages}
+      />
       <div className="chat-container">
         <Screen messages={messages} />
         <UserInput onSend={addMessage} />

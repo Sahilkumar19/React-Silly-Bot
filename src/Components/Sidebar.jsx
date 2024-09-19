@@ -4,6 +4,7 @@ import './CustomStyles.css';
 function Sidebar({ isDarkMode, onThemeToggle, chatHistory }) {
   return (
     <div className="sidebar">
+      {/* Theme toggle section */}
       <div className="sidebar-section">
         <h3>Settings</h3>
         <label className="theme-toggle">
@@ -16,6 +17,7 @@ function Sidebar({ isDarkMode, onThemeToggle, chatHistory }) {
         </label>
       </div>
 
+      {/* Chat history section */}
       <div className="sidebar-section">
         <h3>Chat History</h3>
         <ul className="chat-history">
