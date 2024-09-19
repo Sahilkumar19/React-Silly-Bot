@@ -61,7 +61,10 @@ To run this project locally, follow these steps:
    ```bash
    npm run dev
    ```
+### **Guided By**
 
-### **Team Member**
-- Sahil kumar
-- Nagmani kumar
+- Ambar Jain & Jeet Mukharjee
+  
+### **Team Members**
+
+- Sahil kumar & Nagmani kumar
