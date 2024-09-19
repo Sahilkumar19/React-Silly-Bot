@@ -31,7 +31,7 @@ function UserInput({ onSend }) {
         {input && (
           <button 
             type="button" 
-            className="btn btn-outline-secondary ml-2"
+            className="btn btn-outline-secondary"
             onClick={handleClearClick}
           >
             Clear
@@ -40,7 +40,7 @@ function UserInput({ onSend }) {
 
         <button
           type="submit"
-          className="btn btn-primary ml-4"
+          className="btn btn-primary"
           ref={sendButtonRef}
         >
           Send
