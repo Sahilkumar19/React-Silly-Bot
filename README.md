@@ -49,6 +49,15 @@ To run this project locally, follow these steps:
    ```bash
    git clone https://github.com/your-Sahilkumar19/react-silly-bot.git
    ```
+2. **Navigate to the project directory:**
    ```bash
    cd react-silly-bot
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Run the app:**
+   ```bash
+   npm run dev
    ```
