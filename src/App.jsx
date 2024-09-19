@@ -30,13 +30,17 @@ function App() {
 
   return (
     <div className="app">
-        <div className="chat-container">
-          <Screen messages={messages} />
-          <UserInput onSend={addMessage} />
-        </div>
+      <div className="sidebar">
+        <h2>Sidebar</h2>
+        <p>Content for sidebar...</p>
+      </div>
+      <div className="chat-container">
+        <Screen messages={messages} />
+        <UserInput onSend={addMessage} />
+      </div>
     </div>
-    
   );
 }
+
 
 export default App;

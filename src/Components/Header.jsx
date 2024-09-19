@@ -13,8 +13,8 @@ function Header({ onThemeChange }) {
   return (
     <div className={`navbar ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="chatbot-header">
-      <img src={botImage} alt="MiniMeet" className="logos" />
-      <h1>MiniMeet</h1>
+        <img src={botImage} alt="MiniMeet" className="logos" />
+        <h1>MiniMeet</h1>
       </div>
     </div>
   );

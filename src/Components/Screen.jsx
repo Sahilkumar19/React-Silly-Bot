@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles.css';
 import Header from './Header';
-import botImage from '../assets/meet.jpg';
 
 function Screen({ messages }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -20,40 +19,15 @@ function Screen({ messages }) {
   return (
     <div className={`chat-window ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
       <Header onThemeChange={handleThemeChange} />
-      <div
-        className="messages-container"
-        style={{
-          backgroundSize: 'cover',  
-          backgroundPosition: 'center', 
-          backgroundRepeat: 'no-repeat',
-          height: '50vh', 
-          width: '90%',  
-        }}
-      >
+      <div className="messages-container">
         {messages.map((msg, index) => (
           <div key={index} className={`message ${msg.sender}`}>
             <div className="message-content">
-              <div className="message-header">
-                {msg.sender === 'user' && (
-                  <>
-                    <span className="username">
-                      {msg.username || 'You'}
-                      <div className="timestamp">{msg.timestamp}</div>
-                    </span>
-                  </>
-                )}
-                {msg.sender === 'bot' && (
-                  <>
-                    <span className="username">{msg.username || 'MiniMeet'}</span>
-                    <div className="timestamp">{msg.timestamp}</div>
-                  </>
-                )}
-              </div>
               <div className="message-text">{msg.text}</div>
+              <div className="timestamp">{msg.timestamp}</div>
             </div>
           </div>
         ))}
-        {/* This div will be scrolled into view */}
         <div ref={messagesEndRef} />
       </div>
     </div>
