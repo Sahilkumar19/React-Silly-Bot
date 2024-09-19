@@ -19,7 +19,7 @@ function Screen({ messages }) {
 
   return (
     <div className={`chat-window ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
-      <Navbar onThemeChange={handleThemeChange} />
+      <Header onThemeChange={handleThemeChange} />
       <div
         className="messages-container"
         style={{

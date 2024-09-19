@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles.css';
-import botImage from '/src/assets/meet.jpg';
+import botImage from '../assets/meet.jpg';
 
 function Header({ onThemeChange }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
