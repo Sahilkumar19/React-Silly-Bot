@@ -1,4 +1,4 @@
-# React-Silly-Bot
+# React-Silly-Bot - MinMeet
 
 ## Web Development Homework 1: React Chat Interface with a Simple Bot
 
