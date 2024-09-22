@@ -1,4 +1,4 @@
-# React-Silly-Bot - MiniMeet
+# React-Silly-Bot - MiniMeet, Deployed link: https://main--minimeet.netlify.app/
 
 ## Web Development Homework 1: React Chat Interface with a Simple Bot
 
